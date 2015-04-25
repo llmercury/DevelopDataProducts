@@ -15,7 +15,10 @@ shinyUI(pageWithSidebar(
             tabPanel("Prediction", 
                     h3('Height Prediction'),
                     h4('At age 18, your child will likely be (inches):'),
-                    verbatimTextOutput("prediction")),
+                    verbatimTextOutput("height"),
+                    h4('90% of chance, the height of your child will be in the range (inches):'),
+                    verbatimTextOutput("heightRange")
+                    ),
             tabPanel("Learn More", textOutput("learnMore"))                     
     ))
 ))
